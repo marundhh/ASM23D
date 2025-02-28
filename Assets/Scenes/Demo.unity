@@ -2141,7 +2141,7 @@ MonoBehaviour:
     sprintSpeed: 6
   jumpWithRigidbodyForce: 0
   jumpAndRotate: 1
-  jumpTimer: 0.3
+  jumpTimer: 1
   jumpHeight: 4
   airSpeed: 5
   airSmooth: 6
@@ -25131,11 +25131,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -27.908651, y: -1.7447357, z: -0.5054436}
     m_Extent: {x: 25.041918, y: 24.353554, z: 10.339404}
   m_DirtyAABB: 0
---- !u!1 &153475215 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8269599060291971637, guid: 6f16e7ebc8ecb614e8dd68f8d18ac096, type: 3}
-  m_PrefabInstance: {fileID: 1028111494537726720}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &154150304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132096,7 +132091,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8040951016003786177, guid: 270357c444197b54789dc66363682c00, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -186546,18 +186542,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6762895971710619774, guid: 6f16e7ebc8ecb614e8dd68f8d18ac096, type: 3}
   m_PrefabInstance: {fileID: 1028111494537726720}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1440469050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153475215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d61d23fc337675d4f8de4db753890412, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1441302385
 GameObject:
   m_ObjectHideFlags: 0
@@ -281446,10 +281430,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8269599060291971637, guid: 6f16e7ebc8ecb614e8dd68f8d18ac096, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1440469050}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f16e7ebc8ecb614e8dd68f8d18ac096, type: 3}
 --- !u!1001 &2560950356527642518
 PrefabInstance:
