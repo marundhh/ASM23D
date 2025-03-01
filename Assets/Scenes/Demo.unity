@@ -228609,7 +228609,7 @@ MonoBehaviour:
   health: 100
   gem: 0
   txtGem: {fileID: 776975871}
-  slider: {fileID: 1690970614}
+  healthSlider: {fileID: 1690970614}
 --- !u!4 &1754111946
 Transform:
   m_ObjectHideFlags: 0

@@ -2,17 +2,20 @@
 
 public class PlayerSwitcher : MonoBehaviour
 {
-    public GameObject[] players; // Các player trong game
+    public GameObject[] players; // Danh sách Player
     private int currentIndex = 0; // Player hiện tại
 
     void Start()
     {
-        // Ẩn tất cả player và camera
+        // Ẩn tất cả player, chỉ bật player đầu tiên
         for (int i = 0; i < players.Length; i++)
         {
-            players[i].SetActive(i == 0); // Chỉ bật player đầu tiên
-            TogglePlayerCamera(players[i], i == 0); // Bật camera cho player đầu
+            players[i].SetActive(i == 0);
+            TogglePlayerCamera(players[i], i == 0);
         }
+
+        // Cập nhật GameSession với Player đầu tiên
+        GameSession.Instance.SetCurrentPlayer(players[0].GetComponent<AttributesManager>());
     }
 
     void Update()
@@ -21,17 +24,24 @@ public class PlayerSwitcher : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Alpha1 + i))
             {
-                SwitchPlayer(i); // Chuyển player
+                SwitchPlayer(i); // Chuyển player khi nhấn phím số
             }
         }
     }
 
     void SwitchPlayer(int newIndex)
     {
-        if (newIndex == currentIndex) return; // Không làm gì nếu chọn player hiện tại
+        if (newIndex == currentIndex) return; // Không đổi nếu chọn lại chính mình
 
         GameObject currentPlayer = players[currentIndex];
         GameObject newPlayer = players[newIndex];
+
+        // Lưu lại máu của Player cũ vào GameSession
+        AttributesManager oldAttributes = currentPlayer.GetComponent<AttributesManager>();
+        if (oldAttributes != null)
+        {
+            GameSession.Instance.UpdateHealth(oldAttributes.health);
+        }
 
         // Chuyển vị trí player mới sang chỗ player cũ
         newPlayer.transform.SetPositionAndRotation(currentPlayer.transform.position, currentPlayer.transform.rotation);
@@ -44,6 +54,9 @@ public class PlayerSwitcher : MonoBehaviour
         newPlayer.SetActive(true);
         TogglePlayerCamera(newPlayer, true);
 
+        // Cập nhật Player mới vào GameSession
+        GameSession.Instance.SetCurrentPlayer(newPlayer.GetComponent<AttributesManager>());
+
         currentIndex = newIndex; // Cập nhật player hiện tại
     }
 
@@ -52,7 +65,7 @@ public class PlayerSwitcher : MonoBehaviour
         Camera playerCamera = player.GetComponentInChildren<Camera>();
         if (playerCamera != null)
         {
-            playerCamera.enabled = isActive; // Bật/tắt camera
+            playerCamera.enabled = isActive;
         }
     }
 }

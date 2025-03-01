@@ -18,7 +18,7 @@ public class Bullet : MonoBehaviour
             AttributesManager enemyAttributes = collision.gameObject.GetComponent<AttributesManager>();
             if (enemyAttributes != null)
             {
-                enemyAttributes.TackeDamage(damage); // Gây sát thương
+                enemyAttributes.TakeDamage(damage); // Gây sát thương
             }
         }
 
