@@ -16,4 +16,4 @@ MonoBehaviour:
   itemName: Medium
   value: 10
   image: {fileID: 21300000, guid: 9b91cc7347111496f836843cbc44a76c, type: 3}
-  itemType: 1
+  itemType: 0

@@ -53369,7 +53369,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cacfe13c2f50e744385457d62f19924c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88fe6dd80235f4affbc83eac19fb4d1e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -122554,6 +122554,17 @@ SkinnedMeshRenderer:
     m_Center: {x: -50.086098, y: -1.3837318, z: 0}
     m_Extent: {x: 19.550522, y: 27.435774, z: 18.809784}
   m_DirtyAABB: 0
+--- !u!114 &921517379 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 793630096708925477, guid: ce49e8b6aec051e4cad33283d5eb957c, type: 3}
+  m_PrefabInstance: {fileID: 1236373565}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &921703040
 GameObject:
   m_ObjectHideFlags: 0
@@ -157431,6 +157442,10 @@ PrefabInstance:
       propertyPath: itemHolder
       value: 
       objectReference: {fileID: 1066016554}
+    - target: {fileID: 101599541981007453, guid: c3e75bcf280bfb04e9b6d69031bda3d3, type: 3}
+      propertyPath: enableRemoveItem
+      value: 
+      objectReference: {fileID: 921517379}
     - target: {fileID: 3428877537534154034, guid: c3e75bcf280bfb04e9b6d69031bda3d3, type: 3}
       propertyPath: itemTypePrefabs.Array.size
       value: 3
@@ -160128,13 +160143,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 793630096708925477, guid: ce49e8b6aec051e4cad33283d5eb957c, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1296699425}
+    - target: {fileID: 793630096708925477, guid: ce49e8b6aec051e4cad33283d5eb957c, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayInventory
+      objectReference: {fileID: 0}
     - target: {fileID: 962373164194988098, guid: ce49e8b6aec051e4cad33283d5eb957c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 962373164947660104, guid: ce49e8b6aec051e4cad33283d5eb957c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 110
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 962373165145927096, guid: ce49e8b6aec051e4cad33283d5eb957c, type: 3}
       propertyPath: m_Pivot.x
@@ -160270,7 +160293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7798726580698318600, guid: ce49e8b6aec051e4cad33283d5eb957c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5925096302371888903, guid: ce49e8b6aec051e4cad33283d5eb957c, type: 3}
@@ -167175,6 +167198,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7434366870097902441, guid: 67730759029cd56479f8193919c2264d, type: 3}
   m_PrefabInstance: {fileID: 1095518097}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1296699425 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 101599541981007453, guid: c3e75bcf280bfb04e9b6d69031bda3d3, type: 3}
+  m_PrefabInstance: {fileID: 1212305832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14150e509d222c1429c93323e2a849d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1297334130
 GameObject:
   m_ObjectHideFlags: 0
@@ -219808,7 +219842,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1614645733}
   m_HandleRect: {fileID: 0}
@@ -228572,7 +228606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89467824a32a3124599e15e8fde560d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 100
   gem: 0
   txtGem: {fileID: 776975871}
   slider: {fileID: 1690970614}
@@ -281479,10 +281513,6 @@ PrefabInstance:
     - target: {fileID: 1037333725633781274, guid: 492e3cc1eaaaea7468f3f9cb1854e986, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1903395370435303293, guid: 492e3cc1eaaaea7468f3f9cb1854e986, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3399196146835519703, guid: 492e3cc1eaaaea7468f3f9cb1854e986, type: 3}
       propertyPath: m_AnchorMax.x

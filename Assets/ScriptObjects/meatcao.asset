@@ -16,4 +16,4 @@ MonoBehaviour:
   itemName: meat
   value: 20
   image: {fileID: 21300000, guid: b29cbbd10ecf3fd40991d4734d556c17, type: 3}
-  itemType: 1
+  itemType: 0

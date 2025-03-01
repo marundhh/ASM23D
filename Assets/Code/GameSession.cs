@@ -13,7 +13,7 @@ public class GameSession : MonoBehaviour
 
     private void Awake()
     {
-       int numbersession = FindObjectsByType<GameSession>(FindObjectsSortMode.None).Length;
+        int numbersession = FindObjectsByType<GameSession>(FindObjectsSortMode.None).Length;
         if (numbersession > 1)
             Destroy(gameObject);
         else
@@ -32,5 +32,9 @@ public class GameSession : MonoBehaviour
     {
         this.gem += x;
         txtGem.text = "Gem: " + this.gem;
+    }
+    public void Increaseheath(int value)
+    {
+        slider.value += value;
     }
 }

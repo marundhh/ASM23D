@@ -16,4 +16,4 @@ MonoBehaviour:
   itemName: Small
   value: 50
   image: {fileID: 21300000, guid: 5c6d8ccbf8e884f84bb65a9ca459840e, type: 3}
-  itemType: 1
+  itemType: 0
