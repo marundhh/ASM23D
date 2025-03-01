@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2760170882203905967}
   - component: {fileID: 1126006335128795869}
   - component: {fileID: 9019077165838237902}
-  - component: {fileID: 2227516023796070791}
+  - component: {fileID: 9178813423502840756}
   m_Layer: 0
   m_Name: Sword5_3_2
   m_TagString: sword
@@ -101,7 +101,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 0
   serializedVersion: 3
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   atm: {fileID: 0}
---- !u!114 &2227516023796070791
+--- !u!114 &9178813423502840756
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PlayerAttack : MonoBehaviour
+public class PlayerAttackanimal : MonoBehaviour
 {
     public int damage = 50; // Sát thương mỗi đòn chém
 
