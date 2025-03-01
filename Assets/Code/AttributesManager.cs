@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class AttributesManager : MonoBehaviour
 {
+    public static AttributesManager Instance { get; private set; }
     [Header("Attributes")]
     public int health;
     public int attack;

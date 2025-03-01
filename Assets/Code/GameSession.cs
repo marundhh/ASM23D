@@ -33,8 +33,22 @@ public class GameSession : MonoBehaviour
         this.gem += x;
         txtGem.text = "Gem: " + this.gem;
     }
-    public void Increaseheath(int value)
+    public void IncreaseHealth(int value)
     {
-        slider.value += value;
+        health += value;
+        health = Mathf.Min(health, (int)slider.maxValue);
+        slider.value = health;
+
+        // Tìm nhân vật có AttributesManager
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            AttributesManager playerAttributes = player.GetComponent<AttributesManager>();
+            if (playerAttributes != null)
+            {
+                playerAttributes.health = health; // Cập nhật máu của nhân vật
+            }
+        }
     }
+
 }

@@ -22,11 +22,11 @@ public class ItemUIController : MonoBehaviour
         switch (item.itemType)
         {
             case ItemType.Glass:
-                FindObjectOfType<GameSession>().Increaseheath(item.value);
+                FindObjectOfType<GameSession>().IncreaseHealth(item.value);
                 break;
 
             case ItemType.Weapons:
-                FindObjectOfType<GameSession>().Increaseheath(-item.value);
+                FindObjectOfType<GameSession>().IncreaseHealth(-item.value);
                 break;
         }
     }
