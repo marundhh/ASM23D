@@ -950,10 +950,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundMusic: {fileID: 0}
-  clickSound: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: a329d6f6fc64d5c499f2bd70c910ba16, type: 3}
   correctSound: {fileID: 0}
   wrongSound: {fileID: 0}
-  musicSource: {fileID: 1258723337}
+  musicSource: {fileID: 779888514}
   sfxSource: {fileID: 1051947841}
 --- !u!4 &587033300
 Transform:
@@ -1244,7 +1244,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8dc2c1b2e48a75940b225c2cecc23b5c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1799,8 +1799,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: a329d6f6fc64d5c499f2bd70c910ba16, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2166,7 +2166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1258723337
 AudioSource:
   m_ObjectHideFlags: 0
