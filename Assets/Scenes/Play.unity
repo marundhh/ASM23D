@@ -92152,6 +92152,7 @@ SkinnedMeshRenderer:
     m_Center: {x: -30.202942, y: 2.621975, z: 0.81689453}
     m_Extent: {x: 17.307327, y: 19.551386, z: 14.135452}
   m_DirtyAABB: 0
+<<<<<<< HEAD
 --- !u!1 &675831370 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 134676, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
@@ -92193,6 +92194,8 @@ MonoBehaviour:
   vThird: {fileID: 0}
   cameraTransform: {fileID: 2076034858}
   animator: {fileID: 1756630434}
+=======
+>>>>>>> parent of 1cb3d77 (Merge branch 'trí' into backup)
 --- !u!1 &676218598
 GameObject:
   m_ObjectHideFlags: 0
@@ -93786,19 +93789,19 @@ PrefabInstance:
 =======
     - target: {fileID: 7668176469105330949, guid: 80795e92a70b3474c917fb8328e328ac, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 7.269792e+22
+      value: 3.67342e-40
       objectReference: {fileID: 0}
     - target: {fileID: 7668176469105330949, guid: 80795e92a70b3474c917fb8328e328ac, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 4.128871e+30
+      value: 9.1835e-41
       objectReference: {fileID: 0}
     - target: {fileID: 7668176469105330949, guid: 80795e92a70b3474c917fb8328e328ac, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 6.3052733e+13
+      value: 1.4785518e-38
       objectReference: {fileID: 0}
     - target: {fileID: 7668176469105330949, guid: 80795e92a70b3474c917fb8328e328ac, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 4.7471822e+27
+      value: 7.670101e-37
       objectReference: {fileID: 0}
 >>>>>>> parent of 2b4c261 (cccc)
     m_RemovedComponents: []
@@ -109109,6 +109112,7 @@ Transform:
   m_PrefabInstance: {fileID: 798423380}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1 &798584257
 GameObject:
@@ -109202,6 +109206,8 @@ MonoBehaviour:
   m_Constraint: 0
   m_ConstraintCount: 2
 >>>>>>> parent of 2b4c261 (cccc)
+=======
+>>>>>>> parent of 1cb3d77 (Merge branch 'trí' into backup)
 --- !u!1 &800693899
 GameObject:
   m_ObjectHideFlags: 0
@@ -160620,11 +160626,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 962373164194988098, guid: ce49e8b6aec051e4cad33283d5eb957c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 962373164947660104, guid: ce49e8b6aec051e4cad33283d5eb957c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 962373165145927096, guid: ce49e8b6aec051e4cad33283d5eb957c, type: 3}
       propertyPath: m_Pivot.x
