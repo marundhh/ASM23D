@@ -137516,6 +137516,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 493852, guid: 52d2ac88e4266ae4287982747ca76a1c, type: 3}
   m_PrefabInstance: {fileID: 1039656397}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1040196571 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1903395370435303293, guid: 492e3cc1eaaaea7468f3f9cb1854e986, type: 3}
+  m_PrefabInstance: {fileID: 2560950356527642518}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1040498360
 GameObject:
   m_ObjectHideFlags: 0
@@ -170580,6 +170585,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 28.645622, y: 3.4454813, z: -8.1524105}
     m_Extent: {x: 18.711624, y: 9.1248455, z: 15.794909}
   m_DirtyAABB: 0
+--- !u!1 &1323247308 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 718612082773439718, guid: 492e3cc1eaaaea7468f3f9cb1854e986, type: 3}
+  m_PrefabInstance: {fileID: 2560950356527642518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1323247311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323247308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b7e8e068eb80340a2e326f99a68c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 1040196571}
 --- !u!1 &1323460544
 GameObject:
   m_ObjectHideFlags: 0
@@ -282017,10 +282040,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: ' EnemyAndWaypoints'
       objectReference: {fileID: 0}
+    - target: {fileID: 6244702717786865950, guid: 492e3cc1eaaaea7468f3f9cb1854e986, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 718612082773439718, guid: 492e3cc1eaaaea7468f3f9cb1854e986, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1323247311}
   m_SourcePrefab: {fileID: 100100000, guid: 492e3cc1eaaaea7468f3f9cb1854e986, type: 3}
 --- !u!1001 &2811871168203737038
 PrefabInstance:

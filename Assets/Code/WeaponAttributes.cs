@@ -1,22 +1,26 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class WeaponAttributes : MonoBehaviour
 {
-    public AttributesManager atm;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        AttributesManager atm = GetComponentInParent<AttributesManager>(); // Lấy AttributesManager từ cha gần nhất
+        AttributesManager otherAttributes = other.GetComponent<AttributesManager>(); // Lấy AttributesManager của mục tiêu
+
+        if (atm == null)
         {
-            atm = transform.root.transform.GetComponent<AttributesManager>();
-            other.GetComponent<AttributesManager>().TakeDamage(atm.attack);
+            Debug.LogWarning("WeaponAttributes: Không tìm thấy AttributesManager trên vũ khí hoặc cha của nó.");
+            return;
         }
-        if (other.CompareTag("Player"))
+
+        if (otherAttributes == null)
         {
-            Debug.Log("Enemy chem Player");
-            atm = transform.root.Find("Enemy").transform.GetComponent<AttributesManager>();
-            other.GetComponent<AttributesManager>().TakeDamage(atm.attack);
+            Debug.LogWarning("WeaponAttributes: Đối tượng bị va chạm không có AttributesManager.");
+            return;
         }
+
+        otherAttributes.TakeDamage(atm.attack);
     }
 }
