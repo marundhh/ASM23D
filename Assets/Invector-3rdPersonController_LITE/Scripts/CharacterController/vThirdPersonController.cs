@@ -4,6 +4,9 @@ namespace Invector.vCharacterController
 {
     public class vThirdPersonController : vThirdPersonAnimator
     {
+        public bool isSwimming;
+        public bool isUnderWater;
+
         public virtual void ControlAnimatorRootMotion()
         {
             if (!this.enabled) return;

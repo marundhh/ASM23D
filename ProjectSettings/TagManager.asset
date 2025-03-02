@@ -9,6 +9,8 @@ TagManager:
   - Gem
   - sword
   - Animal
+  - Water
+  - Terrain
   layers:
   - Default
   - TransparentFX
