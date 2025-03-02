@@ -94907,19 +94907,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7668176469105330949, guid: 80795e92a70b3474c917fb8328e328ac, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 7.269792e+22
+      value: -1.8723581e-37
       objectReference: {fileID: 0}
     - target: {fileID: 7668176469105330949, guid: 80795e92a70b3474c917fb8328e328ac, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 4.128871e+30
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7668176469105330949, guid: 80795e92a70b3474c917fb8328e328ac, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 6.3052733e+13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7668176469105330949, guid: 80795e92a70b3474c917fb8328e328ac, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 4.7471822e+27
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -110476,7 +110476,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 110}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &798584259
 MonoBehaviour:
@@ -162683,11 +162683,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 962373164194988098, guid: ce49e8b6aec051e4cad33283d5eb957c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 962373164947660104, guid: ce49e8b6aec051e4cad33283d5eb957c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 962373165145927096, guid: ce49e8b6aec051e4cad33283d5eb957c, type: 3}
       propertyPath: m_Pivot.x
