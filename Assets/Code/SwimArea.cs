@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Rendering;
+using Invector.vCharacterController;
 
-
-//bỏ  cái này vô code của nước
-/*public class SwimArea : MonoBehaviour
+public class SwimArea : MonoBehaviour
 {
     public vThirdPersonController vThird;
     public Transform cameraTransform;
@@ -47,4 +46,4 @@ using UnityEngine.Rendering;
             other.GetComponentInParent<vThirdPersonController>().isUnderWater = false;
         }
     }
-}*/
+}
