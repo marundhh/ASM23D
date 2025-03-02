@@ -1,10 +1,10 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class AttributesManager : MonoBehaviour
 {
     public static AttributesManager Instance { get; private set; }
+
     [Header("Attributes")]
     public int health;
     public int attack;
@@ -22,12 +22,12 @@ public class AttributesManager : MonoBehaviour
 
         if (CompareTag("Player"))
         {
-            FindFirstObjectByType<GameSession>().MaxHealth(health);
-            FindFirstObjectByType<GameSession>().UpdateHealth(health);
+            GameSession.Instance.MaxHealth(health);
+            GameSession.Instance.UpdateHealth(health);
         }
     }
 
-    public void TackeDamage(int amount)
+    public void TakeDamage(int amount)
     {
         health -= amount;
         DamagePopUpGenerator.Current.CreatePopUp(transform.position, amount.ToString(), Color.yellow);
@@ -37,36 +37,36 @@ public class AttributesManager : MonoBehaviour
             Slider slider = transform.GetChild(1).GetChild(0).GetComponent<Slider>();
             slider.value = health;
 
-            PlaySound(enemySlashSound); // Phát âm khi Enemy bị chém
+            PlaySound(enemySlashSound);
 
             if (health <= 0) EnemyDie();
         }
 
         if (CompareTag("Player"))
         {
-            FindFirstObjectByType<GameSession>().UpdateHealth(health);
-            PlaySound(playerSlashSound); // Phát âm khi Player bị Enemy chém
+            GameSession.Instance.UpdateHealth(health);
+            PlaySound(playerSlashSound);
 
-            if (health <= 0) Time.timeScale = 0; // Player chết
+            if (health <= 0) Time.timeScale = 0;
         }
     }
-   
+
     public void EnemyDie()
     {
-        Debug.Log("kẻ thù chết");
+        Debug.Log("Kẻ thù đã chết");
         Animator ani = transform.GetChild(0).GetComponent<Animator>();
         ani.SetBool("isDead", true);
 
         transform.GetChild(1).gameObject.SetActive(false); // Ẩn canvas HP
         GetComponent<CapsuleCollider>().enabled = false;
 
-        Invoke("DeActiveTpose", 2f);
-        Invoke("ActiveGem", 2f);
+        Invoke("DeactivateTpose", 2f);
+        Invoke("ActivateGem", 2f);
         Destroy(gameObject, 10f);
     }
 
-    void ActiveGem() => transform.GetChild(2).gameObject.SetActive(true);
-    void DeActiveTpose() => transform.GetChild(0).gameObject.SetActive(false);
+    void ActivateGem() => transform.GetChild(2).gameObject.SetActive(true);
+    void DeactivateTpose() => transform.GetChild(0).gameObject.SetActive(false);
 
     public void DealDamage(GameObject target)
     {
@@ -76,10 +76,10 @@ public class AttributesManager : MonoBehaviour
             float totalDamage = attack;
             if (Random.Range(0f, 1f) < critChance) totalDamage += critDamage;
 
-            atm.TackeDamage((int)totalDamage); // Gây sát thương
+            atm.TakeDamage((int)totalDamage);
 
-            if (CompareTag("Player")) PlaySound(playerSlashSound); // Player chém
-            if (CompareTag("Enemy")) PlaySound(enemySlashSound);   // Enemy chém
+            if (CompareTag("Player")) PlaySound(playerSlashSound);
+            if (CompareTag("Enemy")) PlaySound(enemySlashSound);
         }
     }
 

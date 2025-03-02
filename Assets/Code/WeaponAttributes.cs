@@ -10,13 +10,13 @@ public class WeaponAttributes : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             atm = transform.root.transform.GetComponent<AttributesManager>();
-            other.GetComponent<AttributesManager>().TackeDamage(atm.attack);
+            other.GetComponent<AttributesManager>().TakeDamage(atm.attack);
         }
         if (other.CompareTag("Player"))
         {
             Debug.Log("Enemy chem Player");
             atm = transform.root.Find("Enemy").transform.GetComponent<AttributesManager>();
-            other.GetComponent<AttributesManager>().TackeDamage(atm.attack);
+            other.GetComponent<AttributesManager>().TakeDamage(atm.attack);
         }
     }
 }
