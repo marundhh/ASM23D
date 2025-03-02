@@ -101,7 +101,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 0
   serializedVersion: 3
@@ -119,7 +119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 418dfbc29dbff1b43ad515860cc77428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atm: {fileID: 0}
 --- !u!114 &2227516023796070791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,4 +131,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3aac74fbc9b804bac097795edfab57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 50
+  damage: 20
