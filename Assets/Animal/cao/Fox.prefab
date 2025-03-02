@@ -87,6 +87,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67bb07e5d5a0efc43bcc92da028b5808, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1050596822648768976}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67bb07e5d5a0efc43bcc92da028b5808, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1162829258177896900}
     - targetCorrespondingSourceObject: {fileID: 2339377661232794825, guid: 67bb07e5d5a0efc43bcc92da028b5808, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3483381937377925470}
@@ -206,6 +209,24 @@ MonoBehaviour:
   maxHealth: 100
   meatPrefab: {fileID: 9119513212501301151, guid: e3165a5143c74614698ee0ee58621a09, type: 3}
   meatSpawnPoint: {fileID: 881999426800160854}
+--- !u!114 &1162829258177896900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537807844690741996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a9a4f0198afb94aaa8028cc2ec9109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
+  attack: 0
+  critDamage: 1.5
+  critChance: 0.5
+  playerSlashSound: {fileID: 0}
+  enemySlashSound: {fileID: 0}
 --- !u!4 &881999426800160854 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 67bb07e5d5a0efc43bcc92da028b5808, type: 3}
