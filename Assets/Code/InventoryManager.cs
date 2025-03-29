@@ -24,7 +24,7 @@ public class InventoryManager : MonoBehaviour
     }
     public void Add(ItemIn item)
     {
-
+        
         items.Add(item);
         DisplayInventory();
     }
@@ -65,5 +65,9 @@ public class InventoryManager : MonoBehaviour
                 item.transform.Find("RemoveButton").gameObject.SetActive(false);
             }
         }
+    }
+    public bool Contains(ItemIn item)
+    {
+        return items.Contains(item);
     }
 }
