@@ -57,6 +57,16 @@ public class Scripstest
             Assert.AreEqual(20, gameSession.gem);
             Assert.AreEqual("Gem: 20", gameSession.txtGem.text);
         }
+        [Test]
+        public void UpdateGem_DoesNotGoNegative()
+        {
+            gameSession.UpdateGem(10);
+            gameSession.UpdateGem(-20);
+
+            Assert.AreEqual(0, gameSession.gem, "Gem không được giảm dưới 0.");
+            Assert.AreEqual("Gem: 0", gameSession.txtGem.text);
+        }
+
     }
 
 
@@ -100,10 +110,41 @@ public class Scripstest
             // Assert: Kiểm tra xem máu có còn 99 không
             Assert.AreEqual(99, gameSession.health, "Health không bị giảm chính xác.");
         }
-    }
-    
+        [Test]
+        public void UpdateHealth_HealsCorrectly()
+        {
+            gameSession.UpdateHealth(50);
+            gameSession.UpdateHealth(70);
 
-public void ScripstestSimplePasses()
+            Assert.AreEqual(70, gameSession.health);
+            Assert.AreEqual(70, gameSession.healthSlider.value);
+        }
+        [Test]
+        public void UpdateHealth_DoesNotExceedMax()
+        {
+            gameSession.UpdateHealth(100);
+            gameSession.UpdateHealth(150); // Quá giới hạn 100
+
+            Assert.AreEqual(100, gameSession.health, "Máu không được vượt quá max.");
+            Assert.AreEqual(100, gameSession.healthSlider.value);
+        }
+        
+
+
+
+    }
+    [Test]
+    public void TestMyTestClass()
+    {
+        MyTestClass a = new MyTestClass();
+        a.suadiem(50);
+        int x = a.xemdiem();
+        Assert.AreEqual(50, x);
+    }
+
+   
+
+    public void ScripstestSimplePasses()
     {
         // Use the Assert class to test conditions
     }

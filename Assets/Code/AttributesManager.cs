@@ -11,14 +11,10 @@ public class AttributesManager : MonoBehaviour
     public float critDamage = 1.5f;
     public float critChance = 0.5f;
 
-    [Header("Audio Settings")]
-    public AudioClip playerSlashSound; // Âm thanh khi player chém
-    public AudioClip enemySlashSound;  // Âm thanh khi enemy chém
-    private AudioSource audioSource;
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+ 
 
         if (CompareTag("Player"))
         {
@@ -37,7 +33,7 @@ public class AttributesManager : MonoBehaviour
             Slider slider = transform.GetChild(1).GetChild(0).GetComponent<Slider>();
             slider.value = health;
 
-            PlaySound(enemySlashSound);
+       
 
             if (health <= 0) EnemyDie();
         }
@@ -45,7 +41,7 @@ public class AttributesManager : MonoBehaviour
         if (CompareTag("Player"))
         {
             GameSession.Instance.UpdateHealth(health);
-            PlaySound(playerSlashSound);
+         
 
             if (health <= 0) Time.timeScale = 0;
         }
@@ -78,16 +74,8 @@ public class AttributesManager : MonoBehaviour
 
             atm.TakeDamage((int)totalDamage);
 
-            if (CompareTag("Player")) PlaySound(playerSlashSound);
-            if (CompareTag("Enemy")) PlaySound(enemySlashSound);
         }
-    }
-
-    private void PlaySound(AudioClip clip)
-    {
-        if (clip != null && audioSource != null)
-        {
-            audioSource.PlayOneShot(clip);
-        }
+    
+ 
     }
 }
