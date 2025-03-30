@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 5
   itemName: AppleRed
   value: 20
-  image: {fileID: 21300000, guid: a4d3f378d1a88f346af15ee906321f2a, type: 3}
+  image: {fileID: 21300000, guid: 4795ab682e03543e3af816fa796b5274, type: 3}
   itemType: 0
