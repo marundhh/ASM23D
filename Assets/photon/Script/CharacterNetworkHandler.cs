@@ -33,19 +33,10 @@ public class CharacterNetworkHandler : NetworkBehaviour
 
 
             // Gửi input lên mạng
-            RPC_SetInput(moveInput, jumpInput);
+           
         }
     }
 
 
-    [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
-    private void RPC_SetInput(Vector2 moveInput, bool jumpInput)
-    {
-        if (controller != null)
-        {
-            controller.input.x = moveInput.x;
-            controller.input.y = moveInput.y;
-            if (jumpInput) controller.Jump();
-        }
-    }
+    
 }
