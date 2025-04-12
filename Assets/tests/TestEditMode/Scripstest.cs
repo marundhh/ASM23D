@@ -5,6 +5,9 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using TMPro;
 using UnityEngine.UI;
+using static GameItem;
+using static GameUI;
+using static GameEffects;
 
 public class Scripstest
 {
@@ -129,9 +132,6 @@ public class Scripstest
             Assert.AreEqual(100, gameSession.healthSlider.value);
         }
         
-
-
-
     }
     [Test]
     public void TestMyTestClass()
@@ -141,9 +141,177 @@ public class Scripstest
         int x = a.xemdiem();
         Assert.AreEqual(50, x);
     }
+    [TestFixture]
+    public class InventoryTests
+    {
+        [Test]
+        public void Test_AddItem_ContainsItem()
+        {
+            var inventory = new Inventory();
+            var item = new GameIte("HealthPotion");
 
-   
+            inventory.AddItem(item);
 
+            Assert.IsTrue(inventory.Contains(item));
+        }
+
+        [Test]
+        public void Test_RemoveItem_NotContainsItem()
+        {
+            var inventory = new Inventory();
+            var item = new GameIte("HealthPotion");
+
+            inventory.AddItem(item);
+            inventory.RemoveItem(item);
+
+            Assert.IsFalse(inventory.Contains(item));
+        }
+
+        [Test]
+        public void Test_InventoryItemCount()
+        {
+            var inventory = new Inventory();
+            var item1 = new GameIte("HealthPotion");
+            var item2 = new GameIte("ManaPotion");
+
+            inventory.AddItem(item1);
+            inventory.AddItem(item2);
+
+            Assert.AreEqual(2, inventory.ItemCount());
+        }
+        [Test]
+        public void Test_ItemNotAdded_FailsCheck()
+        {
+            var inventory = new Inventory();
+            var item = new GameIte("HealthPotion");
+
+            
+
+            Assert.IsTrue(inventory.Contains(item));
+        }
+    }
+    [TestFixture]
+    public class GameUITests
+    {
+        [Test]
+        public void Test_HUD_ToggleVisibility()
+        {
+            var hud = new GameHUD();
+
+            hud.ToggleHUD();
+            Assert.IsFalse(hud.IsVisible, "HUD should be hidden after toggle.");
+
+            hud.ToggleHUD();
+            Assert.IsTrue(hud.IsVisible, "HUD should be visible after second toggle.");
+        }
+
+        [Test]
+        public void Test_Inventory_OpenClose()
+        {
+            var inventory = new InventoryUI();
+
+            inventory.OpenInventory();
+            Assert.IsTrue(inventory.IsOpen, "Inventory should be open.");
+
+            inventory.CloseInventory();
+            Assert.IsFalse(inventory.IsOpen, "Inventory should be closed.");
+        }
+
+        [Test]
+        public void Test_Settings_SetVolume()
+        {
+            var settings = new GameSettings();
+
+            settings.SetVolume(80);
+            Assert.AreEqual(80, settings.Volume, "Volume should be set to 80.");
+
+            settings.SetVolume(-10);
+            Assert.AreNotEqual(-10, settings.Volume, "Volume should not be negative.");
+
+            settings.SetVolume(150);
+            Assert.AreNotEqual(150, settings.Volume, "Volume should not exceed 100.");
+        }
+        [Test]
+        public void Test_HUD_ToggleVisibility_Fail()
+        {
+            var hud = new GameHUD();
+
+            // Giả sử HUD đang hiển thị
+            Assert.IsTrue(hud.IsVisible, "HUD should start as visible.");
+
+            // Gọi ToggleHUD để ẩn nó
+            hud.ToggleHUD();
+
+            // Kiểm tra HUD có bị ẩn hay không, nhưng cố tình kiểm tra sai
+            Assert.IsTrue(hud.IsVisible, "HUD should be hidden after toggle."); // Test này sẽ FAIL!
+        }
+        [TestFixture]
+        public class GameEffectsTests
+        {
+            // Test Sound System
+            [Test]
+            public void Test_Sound_SetVolume()
+            {
+                var sound = new SoundSystem();
+                sound.SetVolume(80);
+                Assert.AreEqual(80, sound.Volume, "Volume should be set to 80.");
+
+                sound.SetVolume(-10);
+                Assert.AreNotEqual(-10, sound.Volume, "Volume should not be negative.");
+
+                sound.SetVolume(150);
+                Assert.AreNotEqual(150, sound.Volume, "Volume should not exceed 100.");
+            }
+
+            [Test]
+            public void Test_Sound_MuteUnmute()
+            {
+                var sound = new SoundSystem();
+                sound.Mute();
+                Assert.IsTrue(sound.IsMuted, "Sound should be muted.");
+
+                sound.Unmute();
+                Assert.IsFalse(sound.IsMuted, "Sound should be unmuted.");
+            }
+
+            // Test Animation System
+            [Test]
+            public void Test_Animation_Play()
+            {
+                var animation = new AnimationSystem();
+                animation.PlayAnimation("Run");
+                Assert.AreEqual("Run", animation.CurrentAnimation, "Animation should be 'Run'.");
+
+                animation.PlayAnimation("Jump");
+                Assert.AreEqual("Jump", animation.CurrentAnimation, "Animation should be 'Jump'.");
+            }
+
+            // Test Effects System
+            [Test]
+            public void Test_Effect_PlayStop()
+            {
+                var effects = new EffectsSystem();
+                effects.PlayEffect();
+                Assert.IsTrue(effects.IsEffectPlaying, "Effect should be playing.");
+
+                effects.StopEffect();
+                Assert.IsFalse(effects.IsEffectPlaying, "Effect should be stopped.");
+            }
+            [Test]
+            public void Test_Animation_Fail()
+            {
+                var animation = new AnimationSystem();
+
+                animation.PlayAnimation("Run");
+
+                // Kiểm tra sai mong đợi, đáng lẽ là "Run" nhưng cố tình kiểm tra "Idle"
+                Assert.AreEqual("Idle", animation.CurrentAnimation, "Animation should be 'Idle'."); // Test này sẽ FAIL!
+            }
+        }
+        
+
+
+    }
     public void ScripstestSimplePasses()
     {
         // Use the Assert class to test conditions
