@@ -28,6 +28,7 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
+        audioSource = gameObject.AddComponent<AudioSource>();
         // Kiểm tra nếu chưa có AudioSource thì thêm vào
         if (musicSource == null) musicSource = gameObject.AddComponent<AudioSource>();
         if (sfxSource == null) sfxSource = gameObject.AddComponent<AudioSource>();
@@ -69,6 +70,20 @@ public class AudioManager : MonoBehaviour
             default:
                 Debug.LogWarning("Không tìm thấy âm thanh: " + soundType);
                 break;
+        }
+    }
+    private AudioSource audioSource;
+
+    
+
+    public void PlayBackgroundMusic(AudioClip clip)
+    {
+        // Kiểm tra xem AudioSource có đang phát âm thanh không, nếu không thì phát
+        if (!audioSource.isPlaying)
+        {
+            audioSource.clip = clip;
+            audioSource.loop = true; // Giả sử nhạc nền lặp lại
+            audioSource.Play();
         }
     }
 
