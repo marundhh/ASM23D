@@ -1,40 +1,40 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 4/7/2025 - 9:50:54 PM |
+| Generated on: | 4/17/2025 - 7:32:19 AM |
 | Parser: | MultiReportParser (4x OpenCoverParser) |
 | Assemblies: | 14 |
-| Classes: | 344 |
-| Files: | 183 |
-| Covered lines: | 699 |
-| Uncovered lines: | 24200 |
-| Coverable lines: | 24899 |
-| Total lines: | 50029 |
-| Line coverage: | 2.8% (699 of 24899) |
+| Classes: | 345 |
+| Files: | 184 |
+| Covered lines: | 95 |
+| Uncovered lines: | 24948 |
+| Coverable lines: | 25043 |
+| Total lines: | 50267 |
+| Line coverage: | 0.3% (95 of 25043) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 129 |
-| Total methods: | 2712 |
-| Method coverage: | 4.7% (129 of 2712) |
+| Covered methods: | 23 |
+| Total methods: | 2738 |
+| Method coverage: | 0.8% (23 of 2738) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**Assembly-CSharp**|**123**|**3013**|**3136**|**6709**|**3.9%**|**0**|**0**|****|**22**|**255**|**8.6%**|
-|AI_Movement|35|14|49|103|71.4%|0|0||4|4|100%|
+|**Assembly-CSharp**|**0**|**3136**|**3136**|**6709**|**0%**|**0**|**0**|****|**0**|**255**|**0%**|
+|AI_Movement|0|49|49|103|0%|0|0||0|4|0%|
 |AnimationScript|0|53|53|88|0%|0|0||0|3|0%|
 |CharacterNetworkHandler|0|15|15|42|0%|0|0||0|2|0%|
 |ChatController|0|19|19|51|0%|0|0||0|3|0%|
-|CreatureStats|11|0|11|43|100%|0|0||1|1|100%|
+|CreatureStats|0|11|11|43|0%|0|0||0|1|0%|
 |DialogueEditor.ExampleInputManager|0|17|17|34|0%|0|0||0|2|0%|
 |DropdownSample|0|6|6|19|0%|0|0||0|2|0%|
 |Enemy|0|12|12|21|0%|0|0||0|2|0%|
-|EnemyMovement|20|44|64|107|31.2%|0|0||4|9|44.4%|
+|EnemyMovement|0|64|64|107|0%|0|0||0|9|0%|
 |EnvMapAnimator|0|12|12|35|0%|0|0||0|2|0%|
 |FiveRabbitsDemo.AnimatorParamatersChange|0|18|18|44|0%|0|0||0|4|0%|
 |Invector.Utils.vComment|0|1|1|16|0%|0|0||0|1|0%|
 |Invector.vAnimateUV|0|7|7|20|0%|0|0||0|2|0%|
 |Invector.vExtensions|0|54|54|89|0%|0|0||0|4|0%|
-|NPCSystem|10|7|17|29|58.8%|0|0||4|4|100%|
+|NPCSystem|0|17|17|29|0%|0|0||0|4|0%|
 |PlayerMovement|0|31|31|55|0%|0|0||0|4|0%|
 |PlayerSetup|0|15|15|29|0%|0|0||0|5|0%|
 |PlayerSpawner|0|15|15|32|0%|0|0||0|1|0%|
@@ -42,9 +42,9 @@
 |save|0|19|19|33|0%|0|0||0|2|0%|
 |SaveDataThread|0|15|15|35|0%|0|0||0|2|0%|
 |SceneController|0|13|13|30|0%|0|0||0|4|0%|
-|SceneManagers|3|0|3|9|100%|0|0||1|1|100%|
-|TeleportWithEffectAndImage|6|17|23|42|26%|0|0||2|5|40%|
-|TimeController|38|9|47|123|80.8%|0|0||6|6|100%|
+|SceneManagers|0|3|3|9|0%|0|0||0|1|0%|
+|TeleportWithEffectAndImage|0|23|23|42|0%|0|0||0|5|0%|
+|TimeController|0|47|47|123|0%|0|0||0|6|0%|
 |TMPro.Examples.Benchmark01|0|44|44|128|0%|0|0||0|2|0%|
 |TMPro.Examples.Benchmark01_UGUI|0|39|39|135|0%|0|0||0|2|0%|
 |TMPro.Examples.Benchmark02|0|54|54|97|0%|0|0||0|2|0%|
@@ -86,15 +86,15 @@
 |LoadFormSever|0|35|35|60|0%|0|0||0|3|0%|
 |TerrainGenerator|0|36|36|51|0%|0|0||0|5|0%|
 |TreeGeneration|0|19|19|36|0%|0|0||0|4|0%|
-|**camera**|**30**|**86**|**116**|**248**|**25.8%**|**0**|**0**|****|**4**|**13**|**30.7%**|
+|**camera**|**0**|**116**|**116**|**248**|**0%**|**0**|**0**|****|**0**|**13**|**0%**|
 |Invector.vCamera.vThirdPersonCameraEditor|0|23|23|49|0%|0|0||0|4|0%|
-|vThirdPersonCamera|30|63|93|199|32.2%|0|0||4|9|44.4%|
-|**Dialog**|**41**|**2830**|**2871**|**7868**|**1.4%**|**0**|**0**|****|**11**|**253**|**4.3%**|
+|vThirdPersonCamera|0|93|93|199|0%|0|0||0|9|0%|
+|**Dialog**|**0**|**2871**|**2871**|**7868**|**0%**|**0**|**0**|****|**0**|**253**|**0%**|
 |DialogueEditor.BoolCondition|0|1|1|44|0%|0|0||0|1|0%|
 |DialogueEditor.BoolParameter|0|4|4|32|0%|0|0||0|1|0%|
 |DialogueEditor.Connection|0|4|4|48|0%|0|0||0|1|0%|
 |DialogueEditor.Conversation|0|56|56|107|0%|0|0||0|6|0%|
-|DialogueEditor.ConversationManager|36|461|497|851|7.2%|0|0||9|41|21.9%|
+|DialogueEditor.ConversationManager|0|497|497|851|0%|0|0||0|41|0%|
 |DialogueEditor.ConversationManagerEditor|0|104|104|169|0%|0|0||0|3|0%|
 |DialogueEditor.ConversationNode|0|10|10|85|0%|0|0||0|2|0%|
 |DialogueEditor.DialogueEditorUtil|0|219|219|330|0%|0|0||0|13|0%|
@@ -118,7 +118,7 @@
 |DialogueEditor.IntCondition|0|1|1|44|0%|0|0||0|1|0%|
 |DialogueEditor.IntParameter|0|4|4|32|0%|0|0||0|1|0%|
 |DialogueEditor.NodeEventHolderEditor|0|11|11|66|0%|0|0||0|2|0%|
-|DialogueEditor.NPCConversation|2|338|340|565|0.5%|0|0||1|18|5.5%|
+|DialogueEditor.NPCConversation|0|340|340|565|0%|0|0||0|18|0%|
 |DialogueEditor.NPCConversationEditor|0|24|24|66|0%|0|0||0|2|0%|
 |DialogueEditor.OptionConnection|0|5|5|48|0%|0|0||0|2|0%|
 |DialogueEditor.OptionNode|0|1|1|85|0%|0|0||0|1|0%|
@@ -127,37 +127,37 @@
 |DialogueEditor.SetIntParamAction|0|1|1|33|0%|0|0||0|1|0%|
 |DialogueEditor.SpeechConnection|0|5|5|48|0%|0|0||0|2|0%|
 |DialogueEditor.SpeechNode|0|1|1|85|0%|0|0||0|1|0%|
-|DialogueEditor.UIConversationButton|3|114|117|241|2.5%|0|0||1|16|6.2%|
+|DialogueEditor.UIConversationButton|0|117|117|241|0%|0|0||0|16|0%|
 |DialogueEditor.UINode|0|134|134|485|0%|0|0||0|15|0%|
 |DialogueEditor.UIOptionNode|0|36|36|485|0%|0|0||0|9|0%|
 |DialogueEditor.UISpeechNode|0|56|56|485|0%|0|0||0|10|0%|
-|**Fusion.Addons.Physics**|**13**|**873**|**886**|**2436**|**1.4%**|**0**|**0**|****|**4**|**122**|**3.2%**|
+|**Fusion.Addons.Physics**|**0**|**886**|**886**|**2436**|**0%**|**0**|**0**|****|**0**|**122**|**0%**|
 |Fusion.Addons.Physics.NetworkRBData|0|16|16|218|0%|0|0||0|8|0%|
 |Fusion.Addons.Physics.NetworkRigidbody[RBType,PhysicsSimType]|0|424|424|859|0%|0|0||0|18|0%|
 |Fusion.Addons.Physics.NetworkRigidbody2D|0|82|82|170|0%|0|0||0|22|0%|
 |Fusion.Addons.Physics.NetworkRigidbody3D|0|91|91|177|0%|0|0||0|22|0%|
-|Fusion.Addons.Physics.NetworkRigidbodyBase|12|18|30|155|40%|0|0||3|10|30%|
+|Fusion.Addons.Physics.NetworkRigidbodyBase|0|30|30|155|0%|0|0||0|10|0%|
 |Fusion.Addons.Physics.RunnerSimulatePhysics2D|0|35|35|60|0%|0|0||0|7|0%|
 |Fusion.Addons.Physics.RunnerSimulatePhysics3D|0|35|35|90|0%|0|0||0|7|0%|
 |Fusion.Addons.Physics.RunnerSimulatePhysicsBase|0|137|137|406|0%|0|0||0|24|0%|
 |Fusion.Addons.Physics.RunnerSimulatePhysicsBase[TPhysicsScene]|0|35|35|83|0%|0|0||0|3|0%|
-|Fusion.Addons.Physics.TRSThresholds|1|0|1|218|100%|0|0||1|1|100%|
+|Fusion.Addons.Physics.TRSThresholds|0|1|1|218|0%|0|0||0|1|0%|
 |**Fusion.Addons.Physics.Editor**|**0**|**22**|**22**|**44**|**0%**|**0**|**0**|****|**0**|**1**|**0%**|
 |Fusion.Addons.Physics.Editor.ClientPhysicsSimulationDrawer|0|22|22|44|0%|0|0||0|1|0%|
-|**Fusion.Unity**|**198**|**3266**|**3464**|**100264**|**5.7%**|**0**|**0**|****|**25**|**452**|**5.5%**|
-|Fusion.EnableOnSingleRunner|4|54|58|120|6.8%|0|0||2|7|28.5%|
+|**Fusion.Unity**|**0**|**3464**|**3464**|**100264**|**0%**|**0**|**0**|****|**0**|**452**|**0%**|
+|Fusion.EnableOnSingleRunner|0|58|58|120|0%|0|0||0|7|0%|
 |Fusion.FusionBasicBillboard|0|36|36|75|0%|0|0||0|8|0%|
-|Fusion.FusionBootstrap|34|281|315|676|10.7%|0|0||5|42|11.9%|
-|Fusion.FusionBootstrapDebugGUI|100|154|254|359|39.3%|0|0||8|16|50%|
+|Fusion.FusionBootstrap|0|315|315|676|0%|0|0||0|42|0%|
+|Fusion.FusionBootstrapDebugGUI|0|254|254|359|0%|0|0||0|16|0%|
 |Fusion.FusionCoroutine|0|37|37|4179|0%|0|0||0|11|0%|
 |Fusion.FusionGlobalScriptableObjectAddressAttribute|0|8|8|4179|0%|0|0||0|3|0%|
-|Fusion.FusionGlobalScriptableObjectResourceAttribute|20|11|31|4179|64.5%|0|0||5|5|100%|
+|Fusion.FusionGlobalScriptableObjectResourceAttribute|0|31|31|4179|0%|0|0||0|5|0%|
 |Fusion.FusionLogInitializer|0|43|43|4179|0%|0|0||0|3|0%|
 |Fusion.FusionMppm|0|7|7|4179|0%|0|0||0|3|0%|
 |Fusion.FusionMppmCommand|0|2|2|4179|0%|0|0||0|2|0%|
 |Fusion.FusionMppmRegisterCustomDependencyCommand|0|6|6|4179|0%|0|0||0|3|0%|
 |Fusion.FusionRuntimeCheck|0|6|6|4179|0%|0|0||0|1|0%|
-|Fusion.FusionScalableIMGUI|38|11|49|4179|77.5%|0|0||3|3|100%|
+|Fusion.FusionScalableIMGUI|0|49|49|4179|0%|0|0||0|3|0%|
 |Fusion.FusionUnityLogger|0|80|80|4179|0%|0|0||0|5|0%|
 |Fusion.FusionUnitySceneManagerUtils|0|137|137|4179|0%|0|0||0|16|0%|
 |Fusion.JsonUtilityExtensions|0|197|197|4179|0%|0|0||0|10|0%|
@@ -170,9 +170,9 @@
 |Fusion.NetworkObjectProviderDefault|0|53|53|90|0%|0|0||0|8|0%|
 |Fusion.NetworkPrefabSourceResource|0|1|1|4179|0%|0|0||0|1|0%|
 |Fusion.NetworkPrefabSourceStatic|0|1|1|4179|0%|0|0||0|1|0%|
-|Fusion.NetworkPrefabSourceStaticLazy|1|0|1|4179|100%|0|0||1|1|100%|
+|Fusion.NetworkPrefabSourceStaticLazy|0|1|1|4179|0%|0|0||0|1|0%|
 |Fusion.NetworkRunnerVisibilityExtensions|0|207|207|4179|0%|0|0||0|22|0%|
-|Fusion.NetworkSceneManagerDefault|1|332|333|800|0.3%|0|0||1|36|2.7%|
+|Fusion.NetworkSceneManagerDefault|0|333|333|800|0%|0|0||0|36|0%|
 |Fusion.RunnerAOIGizmos|0|30|30|85|0%|0|0||0|3|0%|
 |Fusion.RunnerEnableVisibility|0|51|51|85|0%|0|0||0|22|0%|
 |Fusion.RunnerLagCompensationGizmos|0|45|45|80|0%|0|0||0|5|0%|
@@ -190,7 +190,7 @@
 |Fusion.Statistics.FusionStatsPanelHeader|0|84|84|283|0%|0|0||0|12|0%|
 |Fusion.Statistics.FusionStatsWorldAnchor|0|13|13|25|0%|0|0||0|3|0%|
 |Fusion.TraceChannelsExtensions|0|3|3|4179|0%|0|0||0|1|0%|
-|**Fusion.Unity.Editor**|**64**|**7955**|**8019**|**1406518**|**0.7%**|**0**|**0**|****|**12**|**839**|**1.4%**|
+|**Fusion.Unity.Editor**|**59**|**7960**|**8019**|**1406518**|**0.7%**|**0**|**0**|****|**12**|**839**|**1.4%**|
 |Fusion.Editor.AnimatorControllerTools|0|163|163|14485|0%|0|0||0|15|0%|
 |Fusion.Editor.ArrayLengthAttributeDrawer|0|25|25|14485|0%|0|0||0|2|0%|
 |Fusion.Editor.AssemblyNameAttributeDrawer|0|98|98|14485|0%|0|0||0|5|0%|
@@ -225,7 +225,7 @@
 |Fusion.Editor.FusionGlobalScriptableObjectUtils|0|134|134|14485|0%|0|0||0|12|0%|
 |Fusion.Editor.FusionGrid[TItem,TState]|0|220|220|14485|0%|0|0||0|29|0%|
 |Fusion.Editor.FusionGridItem|0|1|1|14485|0%|0|0||0|1|0%|
-|Fusion.Editor.FusionHierarchyWindowOverlay|23|49|72|14485|31.9%|0|0||1|3|33.3%|
+|Fusion.Editor.FusionHierarchyWindowOverlay|18|54|72|14485|25%|0|0||1|3|33.3%|
 |Fusion.Editor.FusionHubWindow|6|295|301|14749|1.9%|0|0||2|32|6.2%|
 |Fusion.Editor.FusionInstaller|0|28|28|14485|0%|0|0||0|3|0%|
 |Fusion.Editor.FusionPropertyDrawerMetaAttribute|0|2|2|14485|0%|0|0||0|4|0%|
@@ -295,62 +295,63 @@
 |Fusion.Editor.UnityResourcePathAttributeDrawer|0|26|26|14485|0%|0|0||0|1|0%|
 |Fusion.Editor.WarnIfAttributeDrawer|0|6|6|14485|0%|0|0||0|6|0%|
 |Fusion.Statistics.FusionStatisticsEditor|0|16|16|14485|0%|0|0||0|1|0%|
-|**invecter**|**34**|**628**|**662**|**1261**|**5.1%**|**0**|**0**|****|**3**|**78**|**3.8%**|
+|**invecter**|**0**|**662**|**662**|**1261**|**0%**|**0**|**0**|****|**0**|**78**|**0%**|
 |Invector.vCharacterController.vAnimatorParameters|0|7|7|63|0%|0|0||0|1|0%|
 |Invector.vCharacterController.vEditorStartupPrefs|0|36|36|62|0%|0|0||0|5|0%|
 |Invector.vCharacterController.vInvectorStartup|0|15|15|30|0%|0|0||0|3|0%|
 |Invector.vCharacterController.vInvectorWelcomeWindow|0|154|154|283|0%|0|0||0|17|0%|
 |Invector.vCharacterController.vThirdPersonAnimator|0|25|25|63|0%|0|0||0|2|0%|
 |Invector.vCharacterController.vThirdPersonController|0|87|87|131|0%|0|0||0|7|0%|
-|Invector.vCharacterController.vThirdPersonInput|7|81|88|150|7.9%|0|0||1|14|7.1%|
-|Invector.vCharacterController.vThirdPersonMotor|27|189|216|402|12.5%|0|0||2|26|7.6%|
+|Invector.vCharacterController.vThirdPersonInput|0|88|88|150|0%|0|0||0|14|0%|
+|Invector.vCharacterController.vThirdPersonMotor|0|216|216|402|0%|0|0||0|26|0%|
 |vCharacterEditor|0|22|22|47|0%|0|0||0|2|0%|
 |vThirdPersonInputEditor|0|12|12|30|0%|0|0||0|1|0%|
 |**Test**|**0**|**72**|**72**|**137**|**0%**|**0**|**0**|****|**0**|**4**|**0%**|
 |DecimateSlider|0|62|62|115|0%|0|0||0|2|0%|
 |WalkInCircle|0|10|10|22|0%|0|0||0|2|0%|
-|**test1**|**127**|**693**|**820**|**1676**|**15.4%**|**0**|**0**|****|**35**|**174**|**20.1%**|
-|AnimalHealth|6|24|30|54|20%|0|0||2|4|50%|
-|AttackControl|2|15|17|30|11.7%|0|0||1|3|33.3%|
+|**test1**|**15**|**849**|**864**|**1726**|**1.7%**|**0**|**0**|****|**8**|**185**|**4.3%**|
+|AnimalHealth|0|30|30|54|0%|0|0||0|4|0%|
+|AttackControl|0|17|17|30|0%|0|0||0|3|0%|
 |AttackState|0|8|8|39|0%|0|0||0|2|0%|
-|AttributesManager|5|41|46|81|10.8%|0|0||2|9|22.2%|
-|AudioManager|21|25|46|90|45.6%|0|0||3|7|42.8%|
+|AttributesManager|0|46|46|81|0%|0|0||0|9|0%|
+|AudioManager|0|71|71|105|0%|0|0||0|14|0%|
 |AutoMusicChanger|0|30|30|48|0%|0|0||0|5|0%|
-|Bullet|2|14|16|27|12.5%|0|0||1|3|33.3%|
+|Bullet|0|16|16|27|0%|0|0||0|3|0%|
 |CameraFollow|0|5|5|13|0%|0|0||0|2|0%|
 |CollectionGem|0|13|13|27|0%|0|0||0|3|0%|
-|DamagePopUpGenerator|7|6|13|36|53.8%|0|0||3|4|75%|
-|DamageTester|4|2|6|17|66.6%|0|0||1|1|100%|
-|GameEffects|0|23|23|53|0%|0|0||0|17|0%|
+|DamagePopUpGenerator|0|13|13|36|0%|0|0||0|4|0%|
+|DamageTester|0|6|6|17|0%|0|0||0|1|0%|
+|GameEffects|6|17|23|53|26%|0|0||6|17|35.2%|
 |GameItem|0|18|18|41|0%|0|0||0|7|0%|
-|GameSession|17|35|52|95|32.6%|0|0||5|9|55.5%|
+|GameManager|9|10|19|35|47.3%|0|0||2|4|50%|
+|GameSession|0|52|52|95|0%|0|0||0|9|0%|
 |GameUI|0|18|18|44|0%|0|0||0|13|0%|
-|Gun|3|21|24|42|12.5%|0|0||1|4|25%|
+|Gun|0|24|24|42|0%|0|0||0|4|0%|
 |IdeState|0|15|15|51|0%|0|0||0|3|0%|
-|ImageSwitcher|15|3|18|30|83.3%|0|0||3|3|100%|
-|InventoryManager|9|39|48|73|18.7%|0|0||4|9|44.4%|
+|ImageSwitcher|0|18|18|30|0%|0|0||0|3|0%|
+|InventoryManager|0|48|48|73|0%|0|0||0|9|0%|
 |ItemIn|0|4|4|34|0%|0|0||0|2|0%|
-|ItemPickup|1|20|21|39|4.7%|0|0||1|5|20%|
+|ItemPickup|0|21|21|39|0%|0|0||0|5|0%|
 |ItemUIController|0|15|15|33|0%|0|0||0|3|0%|
 |LockTarget|0|57|57|91|0%|0|0||0|8|0%|
 |Meat|0|12|12|22|0%|0|0||0|3|0%|
 |MyTestClass|0|7|7|18|0%|0|0||0|4|0%|
-|PlayerAttack|1|10|11|18|9%|0|0||1|2|50%|
-|PlayerController1|9|1|10|24|90%|0|0||2|3|66.6%|
+|PlayerAttack|0|11|11|18|0%|0|0||0|2|0%|
+|PlayerController1|0|10|10|24|0%|0|0||0|3|0%|
 |PlayerSwim|0|45|45|82|0%|0|0||0|5|0%|
-|PlayerSwitcher|22|20|42|71|52.3%|0|0||4|5|80%|
+|PlayerSwitcher|0|42|42|71|0%|0|0||0|5|0%|
 |RunState|0|14|14|46|0%|0|0||0|3|0%|
-|SettingUIManager|3|15|18|37|16.6%|0|0||1|4|25%|
+|SettingUIManager|0|18|18|37|0%|0|0||0|4|0%|
 |SwimArea|0|26|26|50|0%|0|0||0|3|0%|
 |UIBillboarding|0|8|8|23|0%|0|0||0|3|0%|
 |VolumeController|0|35|35|64|0%|0|0||0|4|0%|
 |WalkState|0|18|18|58|0%|0|0||0|4|0%|
 |WeaponAttributes|0|13|13|26|0%|0|0||0|1|0%|
 |WeaponManager|0|18|18|49|0%|0|0||0|4|0%|
-|**TestEditMode**|**8**|**172**|**180**|**329**|**4.4%**|**0**|**0**|****|**2**|**31**|**6.4%**|
-|Scripstest|8|172|180|329|4.4%|0|0||2|31|6.4%|
-|**TestPlayerMode**|**61**|**3**|**64**|**135**|**95.3%**|**0**|**0**|****|**11**|**12**|**91.6%**|
-|Testplayermode|61|3|64|135|95.3%|0|0||11|12|91.6%|
+|**TestEditMode**|**9**|**147**|**156**|**329**|**5.7%**|**0**|**0**|****|**1**|**26**|**3.8%**|
+|Scripstest|9|147|156|329|5.7%|0|0||1|26|3.8%|
+|**TestPlayerMode**|**12**|**176**|**188**|**323**|**6.3%**|**0**|**0**|****|**2**|**32**|**6.2%**|
+|Testplayermode|12|176|188|323|6.3%|0|0||2|32|6.2%|
 |**Unity.Fusion.CodeGen**|**0**|**4291**|**4291**|**185558**|**0%**|**0**|**0**|****|**0**|**448**|**0%**|
 |Fusion.CodeGen.DictionaryForEachMacro|0|36|36|7422|0%|0|0||0|3|0%|
 |Fusion.CodeGen.ForLoopMacro|0|26|26|7422|0%|0|0||0|2|0%|
